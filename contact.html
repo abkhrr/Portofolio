@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAB | Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/db080f10fc.js"></script>
+       
+</head>
+<body>
+
+        <a class="menu-button js-menu-button">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        
+            
+        
+          <div class="fullscreen-menu-container js-menu-container">
+        
+            <a class="menu-button js-menu-close">
+                <div class="menu-icon is-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        
+            <div class="fullscreen-menu">
+        
+                <div class="fullscreen-menu__image-container"></div>
+        
+                <h1 class="fullscreen-menu__title">Tap categories to see more!</h1>
+        
+                <nav class="fullscreen-menu__nav">
+                    <ul>
+        
+                        <li>
+                            <a href="home.html" style="color: black; font-weight: bold">About</a>
+                        </li>
+        
+                        <li>
+                            <a href="portofolio.html" style="color: black; font-weight: bold">Portfolio</a>
+                        </li>
+        
+                        <li>
+                            <a href="#" style="color: black; font-weight: bold">Contact</a>
+                        </li>
+
+                        <li>
+                          <a href="cv-very-newest-RAB.pdf" target="_blank" style="color: black; font-weight: bold" >Download My Resume</a>
+                        </li>
+        
+                    </ul>
+                </nav>
+        
+                <a target="_blank" href="#" class="social-button--twitter">
+                    <i class="icon--twitter"></i>
+                </a>
+        
+                <a target="_blank" href="http://www.linkedin.com/in/rakhmat-adya-bukhari-104008148" class="social-button--facebook">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+        
+                <a target="_blank" href="#" class="social-button--pintrest">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+        
+            </div>
+        
+        </div>
+
+        <div id='browser'>
+                <div id='browser-bar'>
+                  <div class='circles'></div>
+                  <div class='circles'></div>
+                  <div class='circles'></div>
+                  <p>Contact Me</p>
+                  <span class='arrow entypo-resize-full'></span>
+                </div>
+                <div id='content'>
+                  <div id='left'>
+                    <div id='map'>
+                      <p>Where To Find Me</p>
+                      <div class='map-locator'>
+                        <div class='tooltip'>
+                          <ul>
+                            <li>
+                              <span class='entypo-location'></span>
+                              <span class='selectedLocation'>West Jakarta</span>
+                            </li>
+                            <li>
+                              <span class='entypo-mail'></span>
+                              <a href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=bukhariadbuk@gmail.com'>bukhariadbuk@gmail.com</a>
+                            </li>
+                            <li>
+                              <span class='entypo-phone'></span>
+                              (+62) 87865202784
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class='zoom'></div>
+                    </div>
+                    <ul id='location-bar'>
+                      <li>
+                        <a class='location' data-location='Indonesia' href='https://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>Jakarta, Indonesia</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id='right'>
+                    <p>Connect</p>
+                    <div id='social'>
+                      <a class='social' href="#">
+                        <span class='entypo-facebook'></span>
+                      </a>
+                      <a class='social' href="http://www.twitter.com/adyblhr" target="_blank">
+                        <span class='entypo-twitter'></span>
+                      </a>
+                      <a class='social' href="http://www.linkedin.com/in/rakhmat-adya-bukhari-104008148" target="_blank">
+                        <span class='entypo-linkedin'></span>
+                      </a>
+                      <a class='social' href="http://www.gmail.com" target="_blank">
+                        <span class='entypo-gplus'></span>
+                      </a>
+                      <a class='social' href="http://www.instagram.com/abkhrr" target="_blank">
+                        <span class='entypo-instagrem'></span>
+                      </a>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p>other way</p>
+                    <p class='other entypo-mail'>
+                      <a style="color: blue;" href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=bukhariadbuk@gmail.com'>bukhariadbuk@gmail.com</a>
+                    </p>
+                    <p class='other entypo-phone'>(+62) 87865202784</p>
+                    <br/>
+                    <br/>
+                    <a href="cv-very-newest-RAB.pdf" target="_blank" style="color: blue;">Download My Resume</a>
+                  </div>
+                </div> 
+              </div>
+      
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+    /////
+//
+// Title: Fullscreen Menu with jQuery and Flexbox
+// Author: Steven Roberts
+//
+/////
+
+// Functions
+
+	function openMenu() {
+		$('.js-menu-container').addClass('is-open'); // Find element with the class 'js-menu-container' and apply an additional class of 'is-open'
+	}
+
+
+	function closeMenu() {
+		$('.js-menu-container').removeClass('is-open'); // Find element with the class 'js-menu-container' and remove the class 'is-open'
+	}
+
+// Document Ready
+
+	jQuery(document).ready(function($){ // When everything has finished loading
+
+		$('.js-menu-button').click(function(){ // When the element with the class 'js-menu-button' is clicked
+			openMenu(); // Run the openMenu function
+		});
+
+		$('.js-menu-close').click(function(){ // When the element with the class 'js-menu-close' is clicked
+			closeMenu(); // Run the closeMenu function
+		});
+
+	});
+
+// Keyboard Accessibility
+
+	jQuery(document).keyup(function(e) { // Listen for keyboard presses
+
+		if (e.keyCode === 27) { // 'Esc' key
+
+			if ($('.js-menu-container').hasClass('is-open')) { // If the menu is open close it
+				closeMenu(); // Run the closeMenu function
+			}
+
+		}
+
+	});
+    
+    
+    </script>
+
+    <script>
+    //Inspired by a dribbble by Bluroon
+//https://dribbble.com/shots/1356864-Contact-Us
+
+//Capture the click event on a location
+$("#location-bar a").click(function(event){
+  event.preventDefault();
+  
+  var $this = $(this),
+      $li = $this.parent(),
+      selectedMap = $this.attr("href"),
+      selectedLocation = $this.data('location');
+ 
+  $li.addClass('active').siblings('li').removeClass('active');
+
+  //Update #map bkimage with the image from the location
+  $('#map').css('background-image', 'url(' + selectedMap + ')');  
+  //update tooltip 'address'
+  $('.selectedLocation').text(selectedLocation);
+});
+    
+    </script>
+
+  <script>
+  let downloadButton = document.querySelector('.button11');
+if (downloadButton) {
+  downloadButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    /* Start loading process. */
+    downloadButton.classList.add('loading');
+
+    /* Set delay before switching from loading to success. */
+    window.setTimeout(function () {
+      downloadButton.classList.remove('loading');
+      downloadButton.classList.add('success');
+    }, 3000);
+
+    /* Reset animation. */
+    window.setTimeout(function () {
+      downloadButton.classList.remove('success');
+    }, 8000);
+  });
+};
+  </script>
+
+</body>
+</html>

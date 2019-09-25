@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>RAB | Home</title>
+ <link rel="stylesheet" type="text/css" href="css/home.css">
+ <script src="https://kit.fontawesome.com/db080f10fc.js"></script>
+
+</head>
+<body>
+
+        <div class="fullscreen-menu-container js-menu-container">
+
+                <a class="menu-button js-menu-close">
+                    <div class="menu-icon is-active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+    
+                <div class="fullscreen-menu">
+    
+                    <div class="fullscreen-menu__image-container"></div>
+    
+                    <h1 class="fullscreen-menu__title">Tap categories to see more!</h1>
+    
+                    <nav class="fullscreen-menu__nav">
+                        <ul>
+    
+                            <li>
+                                <a href="#" style="color: black; font-weight: bold">About</a>
+                            </li>
+    
+                            <li>
+                                <a href="portofolio.html" style="color: black; font-weight: bold">Portfolio</a>
+                            </li>
+
+    
+                            <li>
+                                <a href="contact.html" style="color: black; font-weight: bold">Contact</a>
+                            </li>
+
+                            <li>
+                                <a href="cv-very-newest-RAB.pdf" target="_blank" style="color: black; font-weight: bold" >Download My Resume</a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+    
+                    <a target="_blank" href="#" class="social-button--twitter">
+                        <i class="icon--twitter"></i>
+                    </a>
+    
+                    <a target="_blank" href="http://www.linkedin.com/in/rakhmat-adya-bukhari-104008148" class="social-button--facebook">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+    
+                    <a target="_blank" href="#" class="social-button--pintrest">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+    
+                </div>
+    
+            </div>
+    
+            <article class="card">
+    
+                <aside class="card__image-container">
+    
+                    <a class="menu-button js-menu-button">
+                        <div class="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+    
+                    <img class="card__image" src="https://source.unsplash.com/random">
+    
+                </aside>
+    
+                <section class="card__contents">
+    
+                    <header class="card__header">
+                        <h1 class="card__title">About Me.</h1>
+                    </header>
+    
+                    <section class="card__body">
+                        <p>hello introduce my name is rakhmat adya bukhari, i am 21 years old I live in Jakarta Indonesia..</p>
+    
+                        <p>I am studying in a major information systems class, a bachelor's degree. I took the employee class because I wanted to work. I am also a junior web freelancer and mobile developer.</p>
+
+                        <p>My occupation now is to create a website and develop my Android and iOS applications which will be launched 2 months later, this project is called joinvit for the landing page website and the application name is joinvita.</p>
+
+                        <p>my hobby is programming. I learned a lot of programming from campus e-learning, courses, and learned it through the internet. I am an honest and highly motivated person, able to work under pressure, able to work in teams or individuals, I am a conscientious and diligent person.</p>
+
+                        <p>I am very proficient in HTML, CSS, Java, Java Script, and PHP. I built this portfolio website in just 60 minutes. I always attach great importance to people's views of the websites I make, and I also deepen UI and UX mobile and mobile websites. I also understand Json, jQuery, etc.</p>
+
+                        <p>Here's the link for my webite <a target="_blank" href="http:www.joinvit.com" style="color: blue;">Click Here</a></p> <br/><br/>
+
+                        <div class="container">
+                            <h1>My Skills</h1>
+                            <div class="bar learning" data-skill="UI/UX Designer"></div>
+                            <div class="bar back intermediate" data-skill="C#"></div>
+                            <div class="bar back intermediate" data-skill="Swift"></div>
+                            <div class="bar back intermediate" data-skill="PHP"></div>
+                            <div class="bar back intermediate" data-skill="Mobile development"></div>
+                            <div class="bar front advanced" data-skill="Android (JAVA)"></div>
+                            <div class="bar front advanced" data-skill="MySql"></div>
+                            <div class="bar front advanced" data-skill="JSon"></div>
+                            <div class="bar front advanced" data-skill="JAVA"></div>
+                            <div class="bar front advanced" data-skill="JavaScript"></div>
+                            <div class="bar front advanced" data-skill="Jquery"></div>
+                            <div class="bar front advanced" data-skill="CSS3"></div>
+                            <div class="bar front expert" data-skill="HTML5"></div>
+                            <div class="bar front expert" data-skill="Web development"></div>
+                        
+                          </div>
+
+                    </section>
+    
+                    <footer class="card__footer">
+    
+                        <a target="_blank" href="#" class="social-button--twitter">
+                            <i class="icon--twitter"></i>
+                        </a>
+    
+                        <a target="_blank" href="http://www.linkedin.com/in/rakhmat-adya-bukhari-104008148" class="social-button--facebook">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+    
+                        <a target="_blank" href="#" class="social-button--pintrest">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+    
+                    </footer>
+    
+                </section>
+    
+            </article>
+    <!-- Include jQuery and main.js - Short URL http://srt.lt/Ro3W2 -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+    /////
+//
+// Title: Fullscreen Menu with jQuery and Flexbox
+// Author: Steven Roberts
+//
+/////
+
+// Functions
+
+	function openMenu() {
+		$('.js-menu-container').addClass('is-open'); // Find element with the class 'js-menu-container' and apply an additional class of 'is-open'
+	}
+
+
+	function closeMenu() {
+		$('.js-menu-container').removeClass('is-open'); // Find element with the class 'js-menu-container' and remove the class 'is-open'
+	}
+
+// Document Ready
+
+	jQuery(document).ready(function($){ // When everything has finished loading
+
+		$('.js-menu-button').click(function(){ // When the element with the class 'js-menu-button' is clicked
+			openMenu(); // Run the openMenu function
+		});
+
+		$('.js-menu-close').click(function(){ // When the element with the class 'js-menu-close' is clicked
+			closeMenu(); // Run the closeMenu function
+		});
+
+	});
+
+// Keyboard Accessibility
+
+	jQuery(document).keyup(function(e) { // Listen for keyboard presses
+
+		if (e.keyCode === 27) { // 'Esc' key
+
+			if ($('.js-menu-container').hasClass('is-open')) { // If the menu is open close it
+				closeMenu(); // Run the closeMenu function
+			}
+
+		}
+
+	});
+    
+    
+    </script>
+
+    
+ 
+</body>
+</html>
